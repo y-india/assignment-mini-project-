@@ -1,37 +1,59 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
-import numpy as np
-import joblib
 
-# Load model
-model = joblib.load("LogisticRegression.pkl")
+# if , elif , else 
 
-# FastAPI app
-app = FastAPI(title="Loan Approval Prediction API")
+# if [condition] :
+#     print("anything")
 
-# Request Body Model
-class LoanInput(BaseModel):
-    Age: int
-    Income: float
-    Credit_Score: float
-    Loan_Amount: float
+# elif [condition ] :
+#     print()
 
-@app.get("/")
-def home():
-    return {"message": "Loan Prediction API is running..."}
+# else :
+#     print()
 
-@app.post("/predict")
-def predict(data: LoanInput):
-    # Convert to numpy array
-    X = np.array([[data.Age,
-                   data.Income,
-                   data.Credit_Score,
-                   data.Loan_Amount]])
 
-    # Prediction
-    prediction = model.predict(X)[0]          # "Yes" or "No"
+# operators in python 
+# logical and rational 
 
-    return {
-        "prediction": prediction
-    }
+# not , and , or
+
+# == , <= , >= and !=
+
+
+
+
+a =  20
+b = 30
+c = 10
+
+if a > b :
+    print("Yes")
+
+elif a <= c :
+    print("Yes Yes")
+
+else :
+    print("nothing")
+
+
+
+
+d = 100
+e = 110
+f = 90
+
+
+if d == e and f >= e :
+    print("if worked !")
+
+elif f < d and f > e :
+    print("elif 1 worked !")
+
+elif d == 7 or e == 90  :
+    print("elif 2 worked !")
+
+else :
+    print("all done")
+
+
+
 
