@@ -1,0 +1,6 @@
+{
+  "Age": 30,
+  "Income": 50,
+  "Credit_Score": 700,
+  "Loan_Amount": 20
+}
