@@ -43,7 +43,7 @@ You must:
 - Convert datetime columns
 - Compute trip duration
 - Remove invalid or null values
-- Handle outliers (optional)
+- Handle outliers 
 
 ### Output:
 - `cleaned_taxi.csv`
