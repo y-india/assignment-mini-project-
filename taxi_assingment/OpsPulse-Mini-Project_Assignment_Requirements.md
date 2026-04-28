@@ -67,6 +67,3 @@ You must write automated tests using pytest.
 
 ---
 
-## 5. Project Structure
-
-Your project should be organized like this:
