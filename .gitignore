@@ -3,3 +3,4 @@ taxi_assingmen/data_files/yellow_tripdata_2026-01.parquet
 
 taxi_assingment/data_files/*
 
+taxi_assingment/__pycache__
